@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package proto;
+option go_package = ".;proto";
+
+message QuotaDetail {
+  int64 buy = 1;
+  int64 sell = 2;
+  int64 time = 3;
+}
+
+message Currency {
+  string ru_name = 1;
+  string en_name = 2;
+  string code = 3;
+}
